@@ -1,17 +1,20 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import WeatherBoard from "./components/weather/WeatherBoard";
+import { WeatherProvider } from "./provider";
 
 function App() {
   return (
-    <section className="grid place-items-center h-screen">
-      <Header />
-      <main>
-        <section>
-          <WeatherBoard />
-        </section>
-      </main>
-    </section>
+    <WeatherProvider>
+      <section className="grid place-items-center h-screen">
+        <Header />
+        <main>
+          <section>
+            <WeatherBoard />
+          </section>
+        </main>
+      </section>
+    </WeatherProvider>
   );
 }
 
