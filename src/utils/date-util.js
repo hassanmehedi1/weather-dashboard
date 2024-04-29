@@ -27,3 +27,5 @@ function formattedDate(value, type, inMs) {
 
   return new Intl.DateTimeFormat("en-us", options).format(date);
 }
+
+export { formattedDate };
