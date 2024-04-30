@@ -4,4 +4,6 @@ const WeatherContext = createContext("");
 
 const FavouriteContext = createContext("");
 
-export { WeatherContext, FavouriteContext };
+const LocationContext = createContext("");
+
+export { WeatherContext, FavouriteContext, LocationContext };
